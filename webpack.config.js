@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+var path = require("path");
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 
@@ -10,8 +11,8 @@ module.exports ={
         ],
     },
     output:{
-        path:'./app',
-        filename:'./js/[name].js'
+        path: path.join(__dirname,"app"),
+        filename:'js/[name].js'
     },
     module:{
         rules:[
