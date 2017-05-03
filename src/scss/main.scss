@@ -1,6 +1,9 @@
-$primary : red;
+//every sass projects have a partial called variables
+// so we make this for you out of the box
+// ofcourse you can change evrything!
+@import "partials/variables";
+
+//this is for testing purposes check if everythings work fine 
 body{
-    background: $primary;
-    color:blue;
-    font-size: 1.6em;
+    background:$body-background;
 }
